@@ -1,0 +1,48 @@
+body {
+    background-image: url('val1.jpg'); /* Set the background image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+h1 {
+    text-align: center;
+    color: #000000; /* Set text color to black */
+  }
+
+  button {
+    margin: 10px;
+    padding: 10px 20px; /* Add padding for a clearer button */
+    background-color: #ffffff; /* Set background color to white */
+    color: #000000; /* Set text color to black */
+    border: 1px solid #000000; /* Add a black border for better visibility */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+  button:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+  }
+
+  #noButton {
+    transition: transform 0.3s ease-in-out;
+  }
+  #message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }

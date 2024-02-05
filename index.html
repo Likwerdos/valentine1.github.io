@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Yes or No Question</title>
+</head>
+<body>
+    
+     
+
+  <h1>would you be my valentine ?</h1>
+  <button onclick="answerYes()">Yes</button>
+  <button id="noButton" onmouseover="moveNoButton()" onmouseout="resetNoButton()">No</button>
+
+  <script>
+    function answerYes() {
+      alert('I love you! contact me on me instagram : @ayoub_elkirat');
+    }
+
+    function moveNoButton() {
+        var noButton = document.getElementById('noButton');
+  var x = Math.random() * (window.innerWidth - noButton.offsetWidth);
+  var y = Math.random() * (window.innerHeight - noButton.offsetHeight);
+  noButton.style.position = 'absolute'; 
+  noButton.style.left = x + 'px'; 
+  noButton.style.top = y + 'px'; 
+}
+    function resetNoButton() {
+      var noButton = document.getElementById('noButton');
+      noButton.style.transform = 'translateX(0)';
+      noButton.disabled = false; 
+    }
+  </script>
+
+</body>
+</html>
